@@ -8,6 +8,6 @@ public class Controller {
 
     @GetMapping("/v3")
     public String foo(){
-        return "ulvi ";
+        return "sirab 1";
     }
 }
