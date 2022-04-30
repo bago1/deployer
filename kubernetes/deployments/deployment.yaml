@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Deployment
+metadata:
+ name: deployer-deployment
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: deployer-label
+    spec:
+      containers:
+        - name: deployer-ms
+          image: bago1/deployer:latest
+          ports:
+            containerPort: 80
